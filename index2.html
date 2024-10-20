@@ -12,57 +12,65 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
       <div class="container">
         <!-- Navbar Brand start -->
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" /></a>
-        <!-- Navbar Brand end -->
-        
+        <a class="navbar-brand z-1" href="./index2.html"><img src="images/logo.png" alt="Logo" /></a>
+
         <button class="navbar-toggler z-1  text-center " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon z-1  "></span>
         </button>
         
         <div class="collapse navbar-collapse z-1" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active text-white" href="#home">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#courses">Nos ULM</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#gallery">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link active text-white" href="./index2.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#ulm">Nos ULM</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#gallerie">Galerie</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav> 
+     <!-- Navbar Brand end -->
 
-    <div class="jumbotron position-relative overflow-hidden vh-100 ">
-      <video autoplay loop muted class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
-        <source src="./ressources/magni.mp4" type="video/mp4">
-      </video>
-      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
+    <div class="jumbotron position-relative overflow-hidden vh-100">
+  <video autoplay loop muted class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+    <source src="./ressources/magni2.mp4" type="video/mp4">
+  </video>
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
 
-      <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-        <h1>Bienvenue à l'Aéroclub de Frotey Les Lures </h1>
-      </div>
-	  <div class="position-absolute top-50 start-50 " >
-        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-chevron-down text-white" viewBox="0 0 16 16" > 
-			<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-		  </svg>
-      </div>
-    </div>
+  <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+    <h1 class="display-2 fw-bold">Bienvenue à l'Aéroclub de Frotey Les Lures </h1>
+  </div>
+  
+  <!-- Flèche juste en dessous du texte -->
+  <div class="position-absolute start-50 translate-middle" style="top: 75%;">
+    <a href="#presentation-ac2lf">
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-chevron-down text-white" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+    </svg>
+  </a>
+  </div>
+</div>
+
   </header>
 
   <main>
     <section class="container-fluid" id="blue-marin">
-    <article class="row">
-      <div class="col col-md-8 mt-5 ms-4">
-          <h2 class="fw-bold text-white">Bienvenue dans ACL2F</h2>
-          <p class="text-white">L'Aéro-Club de Frotey-les-Lure, appelé communément ACF2L, est né de la fusion entre l'Aéro-Club de l'Ill, situé à Vesoul, et l'Aéro-Club Marin-La-Meslée, basé à Frotey-les-Lure. Aujourd'hui, il fait partie intégrante de l'Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
 
-            Créée sous le statut d'Association Loi 1901 et agréée Jeunesse et Sports, l'ACF2L est également membre de la Fédération Française d'ULM (FFULM). Son siège social se situe au 62, Avenue de la République, 70200 Lure.
+
+    <!-- SECTION NOS PRESENTATION AC2LF -->
+    <article class="row" id="presentation-ac2lf">
+      <div class="col col-md-8 mt-3 ms-4 ">
+          <h2 class="fw-bold text-white display-4">Bienvenue dans ACL2F</h2>
+          <p class="text-white">L'Aéro-Club de Frotey-les-Lure, appelé communément ACF2L, est né de la fusion entre l'Aéro-Club de l'Ill, situé à Vesoul, et l'Aéro-Club Marin-La-Meslée, basé à Frotey-les-Lure. Aujourd'hui, il fait partie intégrante de l'Association des Aéro-Clubs de la Bourgogne-Franche-Comté.</p>
+
+          <p class="text-white">Créée sous le statut d'Association Loi 1901 et agréée Jeunesse et Sports, l'ACF2L est également membre de la Fédération Française d'ULM (FFULM). Son siège social se situe au 62, Avenue de la République, 70200 Lure.</p>
             
-            Depuis sa fondation, l'aéroclub s'est engagé à former des pilotes et des instructeurs dans une ambiance conviviale et professionnelle. En plus des formations, l'ACF2L propose également des baptêmes de l'air pour faire découvrir le plaisir de voler à tous.
-            Nos services incluent :
+          <p class="text-white">Depuis sa fondation, l'aéroclub s'est engagé à former des pilotes et des instructeurs dans une ambiance conviviale et professionnelle. En plus des formations, l'ACF2L propose également des baptêmes de l'air pour faire découvrir le plaisir de voler à tous.
+            Nos services incluent :</p>
       </div>
       </article>
 
       <article class="row">
-      <div class="col col-md-6 ms-5">
+      <div class="col col-md-6 ms-5 ">
               <ul class="list-group text-white ">
                 <li>Maintenance complète des ULM (moteur, structure, etc.)</li>
                 <li>Montage et installation d'équipements de navigation (compas, radio, transpondeur...)</li>
@@ -108,15 +116,18 @@
         </div>
       </article>
     </section>
+    <!-- FIN SECTION NOS PRESENTATION AC2LF -->
 
 
 
+
+    <!-- SECTION NOS VÉHICULES -->
 
       <section class="container-fluid" id="blue-light">
       <article class="row">
-        <div class="col col-md-8 mt-5 ms-5">
-            <h2 class="fw-bold text-white">Nos Véhicules</h2>
-            <p class="text-white">Voici les différents véhicule mis à votre disposition</p>
+        <div class="col col-md-8 mt-5 ms-5" style="color: #080484; ">
+            <h2 class="fw-bold display-4">Nos Véhicules</h2>
+            <p >Voici les différents véhicule mis à votre disposition</p>
         </div>
         </article>
 
@@ -125,40 +136,45 @@
         
             <!-- Card 1 -->
             <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-              <img class="card-img" src="./img/hotellerie-img.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover;">
+              <img class="card-img" src="./img/pendulaire.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover;">
               <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
               <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                <h5 class="card-title m-0">Service d’Hôtelerie</h5>
+                <h5 class="card-title m-0">ULM PENDULAIRE</h5>
               </div>
             </div>
         
             <!-- Card 2 -->
             <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-              <img class="card-img" src="./img/restauration-img.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover;">
+              <img class="card-img" src="./img/autogire.png" alt="Service de Restauration Image" style="height: 100%; object-fit: cover;">
               <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
               <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                <h5 class="card-title m-0">Service de Restauration</h5>
+                <h5 class="card-title m-0">ULM AUTOGYRE</h5>
               </div>
             </div>
         
             <!-- Card 3 -->
             <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-              <img class="card-img" src="./img/ulm-cours-img.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover;">
+              <img class="card-img" src="./img/multiaxe.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover;">
               <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
               <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                <h5 class="card-title m-0">Cours de vol</h5>
+                <h5 class="card-title m-0">ULM MULTI-AXES</h5>
               </div>
             </div>
         
           </div>
         </article>
-  
-        <article class="row ">
-        <div class="col col-md-6 ms-5 mb-5">
-          <h2 class="fw-bold text-white">Nos Moyens Pédagogiques</h2>
-          <p class="text-white">Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</p>
+    <!-- FIN SECTION NOS VÉHICULES -->
 
-                <ul class="list-group text-white ">
+
+
+  
+    <!-- SECTION NOS MOYENS PEDAGOGIQUES -->
+        <article class="row ">
+        <div class="col col-md-6 ms-5 mb-5" style="color: #080484;">
+          <h2 class="fw-bold display-4" >Nos Moyens Pédagogiques</h2>
+          <p >Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</p>
+
+                <ul class="list-group ">
                   <li>Une surface totale de 45 hectares dégagés</li>
                   <li>Deux pistes en X de 800 et 450 m</li>
                   <li>Un hydrosurface de 8 hectares.</li>
@@ -173,11 +189,16 @@
           </div>
         </article>
       </section>
+    <!-- FIN SECTION NOS MOYENS PEDAGOGIQUES -->
 
+
+      
+
+    <!-- SECTION NOTRE EQUIPE -->
       <section class="container-fluid" id="blue-marin">
         <article class="row">
           <div class="col col-md-8 mt-5 ms-5 mb-5">
-              <h2 class="fw-bold text-white">Notre Équipe</h2>
+              <h2 class="fw-bold text-white display-4" >Notre Équipe</h2>
               <p class="text-white">Les personnes qui vont vous accueillir à notre aéroclub</p>
           </div>
           </article>
@@ -214,11 +235,17 @@
           
             </div>
           </article>
+    <!-- FIN SECTION NOTRE EQUIPE -->
+
 
       </section>
          
 
   </main>
+
+  <footer>
+
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

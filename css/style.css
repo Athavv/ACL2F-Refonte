@@ -1,13 +1,3 @@
-.jumbotron video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* La vidéo couvre toute la section */
-    z-index: -1; /* Place la vidéo derrière la navigation */
-}
-
 .jumbotron::before {
     content: '';
     position: absolute;
@@ -26,6 +16,9 @@
 }
 
 #blue-light{
-    background-color: #080484;
-    opacity: 0.70;
+    background-color: #c0bcdc;
+}
+
+footer{
+    background-color: #080484
 }

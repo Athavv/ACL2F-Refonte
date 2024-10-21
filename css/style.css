@@ -1,3 +1,8 @@
+body {
+    background-color: #080484; /* Couleur de fond proche du bleu utilisé sur ton site */
+    z-index: -1000;
+  }
+
 .jumbotron::before {
     content: '';
     position: absolute;

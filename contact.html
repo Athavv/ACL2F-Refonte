@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header vh-100 position-relative">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
+          <div class="container">
+            <!-- Navbar Toggler for mobile -->
+            <button class="navbar-toggler z-1 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon z-1"></span>
+            </button>
+            
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse justify-content-around text-center z-1" id="navbarNav">
+              <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center ">
+                
+                <!-- Left side links -->
+                <li class="nav-item"  id="navbaracti">
+                  <a class="nav-link active text-white" href="./index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#ulm">Nos ULM</a>
+                </li>
+                
+                <!-- Logo in the center -->
+                <li class="nav-item order-lg-0">
+                  <a class="navbar-brand" href="./index.html">
+                    <img src="images/logo.png" alt="Logo" />
+                  </a>
+                </li>
+        
+                <!-- Right side links -->
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./galerie.html">Galerie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="./contact.html">Contact</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+         <!-- Navbar Brand end -->
+    
+        <div class="jumbotron position-relative overflow-hidden vh-100">
+      <video autoplay loop muted class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+        <source src="./ressources/magni2.mp4" type="video/mp4">
+      </video>
+      <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
+    
+      <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="display-2 fw-bold">Contactez <bold>Nous</bold> </h1>
+      </div>
+      
+      <!-- Flèche juste en dessous du texte -->
+      <div class="position-absolute start-50 translate-middle" style="top: 75%;">
+        <a href="#presentation-ac2lf">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-chevron-down text-white" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </a>
+      </div>
+    </div>
+      </header>
+
+      <main>
+        <section class="container-fluid" id="blue-marin">
+    
+    
+        <!-- SECTION NOS PRESENTATION AC2LF -->
+        <article class="row" id="presentation-ac2lf">
+          <div class="col col-md-8 mt-5 ms-4 ">
+              <h2 class="fw-bold text-white display-4">Bienvenue dans ACL2F</h2>
+              <p class="text-white ">L'Aéro-Club de Frotey-les-Lure, appelé communément ACF2L, est né de la fusion entre l'Aéro-Club de l'Ill, situé à Vesoul, et l'Aéro-Club Marin-La-Meslée, basé à Frotey-les-Lure.</p>
+          </div>
+          </article>
+    
+    
+          <article class="container mt-5">
+            <div class="row d-flex align-items-stretch">
+        
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-5" id="card-services">
+                  <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                      <img class="card-img" src="./img/hotellerie-img.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                      
+                      <!-- Background color with transition -->
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                      
+                      <!-- Card title -->
+                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                          <h5 class="card-title m-0">Service d’Hôtellerie</h5>
+                      </div>
+              
+                      <!-- Hidden text that appears on hover -->
+                      <div class="col-md-6"></div>
+                      <div class="col-md-6 position-absolute bottom-0 end-0 text-white p-2" id="card-hover-text" style="z-index: 2;  transition: opacity 0.5s ease;">
+                          <p class="m-0 text-white z-1">Nous disposons de trois studios et six chambres pour les élèves stagiaires.</p>
+                      </div>
+                  </div>
+              </div>
+        
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-5" id="card-services">
+                    <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                        <img class="card-img" src="./img/restauration-img.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        
+                        <!-- Background color with transition -->
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                        
+                        <!-- Card title -->
+                        <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                            <h5 class="card-title m-0">Service de Restauration</h5>
+                        </div>
+              
+                        <!-- Hidden text that appears on hover -->
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6 position-absolute bottom-0 end-0 text-white p-2" id="card-hover-text" style="z-index: 2; transition: opacity 0.5s ease;">
+                            <p class="m-0 text-white">Nous vous proposons un service de restauration rapide.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-5" id="card-services">
+                    <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                        <img class="card-img" src="./img/ulm-cours-img.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        
+                        <!-- Background color with transition -->
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                        
+                        <!-- Card title -->
+                        <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                            <h5 class="card-title m-0">Cours de vol</h5>
+                        </div>
+              
+                        <!-- Hidden text that appears on hover -->
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6 position-absolute bottom-0 end-0 text-white p-2" id="card-hover-text" style="z-index: 2; transition: opacity 0.5s ease;">
+                            <p class="m-0 text-white">Apprenez l’art du pilotage avec des professionnels aguérri</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </article>
+        
+        
+    
+        </section>
+        <!-- FIN SECTION NOS PRESENTATION AC2LF -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

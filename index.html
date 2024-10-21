@@ -11,23 +11,43 @@
   <header class="header vh-100 position-relative">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100">
       <div class="container">
-        <!-- Navbar Brand start -->
-        <a class="navbar-brand z-1" href="./index2.html"><img src="images/logo.png" alt="Logo" /></a>
-
-        <button class="navbar-toggler z-1  text-center " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-          <span class="navbar-toggler-icon z-1  "></span>
+        <!-- Navbar Toggler for mobile -->
+        <button class="navbar-toggler z-1 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon z-1"></span>
         </button>
         
-        <div class="collapse navbar-collapse z-1" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active text-white" href="./index2.html">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#ulm">Nos ULM</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#gallerie">Galerie</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse justify-content-around text-center z-1" id="navbarNav">
+          <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center ">
+            
+            <!-- Left side links -->
+            <li class="nav-item"  id="navbaracti">
+              <a class="nav-link active text-white" href="./index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#ulm">Nos ULM</a>
+            </li>
+            
+            <!-- Logo in the center -->
+            <li class="nav-item order-lg-0">
+              <a class="navbar-brand" href="./index.html">
+                <img src="images/logo.png" alt="Logo" />
+              </a>
+            </li>
+    
+            <!-- Right side links -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#gallerie">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+            
           </ul>
         </div>
       </div>
-    </nav> 
+    </nav>
+    
      <!-- Navbar Brand end -->
 
     <div class="jumbotron position-relative overflow-hidden vh-100">
@@ -83,38 +103,77 @@
         </div>
       </article>
 
-      <article class="row">
-        <div class="d-flex justify-content-around mt-5 mb-5">
-      
-          <!-- Card 1 -->
-          <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-            <img class="card-img" src="./img/hotellerie-img.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover;">
-            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.75;"></div>
-            <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-              <h5 class="card-title m-0">Service d’Hôtelerie</h5>
-            </div>
+      <article class="container mt-5">
+        <div class="row d-flex align-items-stretch">
+    
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-5" id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                  <img class="card-img" src="./img/hotellerie-img.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                  
+                  <!-- Background color with transition -->
+                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                  
+                  <!-- Card title -->
+                  <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                      <h5 class="card-title m-0">Service d’Hôtellerie</h5>
+                  </div>
+          
+                  <!-- Hidden text that appears on hover -->
+                  <div class="col-md-6"></div>
+                  <div class="col-md-6 position-absolute bottom-0 end-0 text-white p-2" id="card-hover-text" style="z-index: 2;  transition: opacity 0.5s ease;">
+                      <p class="m-0 text-white z-1">Nous disposons de trois studios et six chambres pour les élèves stagiaires.</p>
+                  </div>
+              </div>
           </div>
-      
-          <!-- Card 2 -->
-          <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-            <img class="card-img" src="./img/restauration-img.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover;">
-            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.75;"></div>
-            <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-              <h5 class="card-title m-0">Service de Restauration</h5>
+    
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-5" id="card-services">
+                <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                    <img class="card-img" src="./img/restauration-img.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    
+                    <!-- Background color with transition -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                    
+                    <!-- Card title -->
+                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                        <h5 class="card-title m-0">Service de Restauration</h5>
+                    </div>
+          
+                    <!-- Hidden text that appears on hover -->
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 position-absolute bottom-0 end-0 text-white p-2" id="card-hover-text" style="z-index: 2; transition: opacity 0.5s ease;">
+                        <p class="m-0 text-white">Nous vous proposons un service de restauration rapide.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-      
-          <!-- Card 3 -->
-          <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-            <img class="card-img" src="./img/ulm-cours-img.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover;">
-            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.75;"></div>
-            <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-              <h5 class="card-title m-0">Cours de vol</h5>
+    
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-5" id="card-services">
+                <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                    <img class="card-img" src="./img/ulm-cours-img.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    
+                    <!-- Background color with transition -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                    
+                    <!-- Card title -->
+                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                        <h5 class="card-title m-0">Cours de vol</h5>
+                    </div>
+          
+                    <!-- Hidden text that appears on hover -->
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 position-absolute bottom-0 end-0 text-white p-2" id="card-hover-text" style="z-index: 2; transition: opacity 0.5s ease;">
+                        <p class="m-0 text-white">Apprenez l’art du pilotage avec des professionnels aguérri</p>
+                    </div>
+                </div>
             </div>
-          </div>
-      
+    
         </div>
-      </article>
+    </article>
+    
+    
+
     </section>
     <!-- FIN SECTION NOS PRESENTATION AC2LF -->
 
@@ -131,38 +190,44 @@
         </div>
         </article>
 
-        <article class="row">
-          <div class="d-flex justify-content-around  mb-5">
-        
-            <!-- Card 1 -->
-            <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-              <img class="card-img" src="./img/pendulaire.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover;">
-              <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
-              <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                <h5 class="card-title m-0">ULM PENDULAIRE</h5>
+        <article class="container mt-5">
+          <div class="row d-flex align-items-stretch">
+      
+              <!-- Card 1 -->
+              <div class="col-md-4 mb-5">
+                  <div class="card position-relative" style="height: 35rem; border: none;">
+                      <img class="card-img" src="./img/pendulaire.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover;">
+                      <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75);  z-index: 1; opacity: 0.40;"></div>
+                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                          <h5 class="card-title m-0">ULM PENDULAIRE</h5>
+                      </div>
+                  </div>
               </div>
-            </div>
-        
-            <!-- Card 2 -->
-            <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-              <img class="card-img" src="./img/autogire.png" alt="Service de Restauration Image" style="height: 100%; object-fit: cover;">
-              <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
-              <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                <h5 class="card-title m-0">ULM AUTOGYRE</h5>
+      
+              <!-- Card 2 -->
+              <div class="col-md-4 mb-5">
+                  <div class="card position-relative" style="height: 35rem; border: none;">
+                      <img class="card-img" src="./img/autogire.png" alt="Service de Restauration Image" style="height: 100%; object-fit: cover;">
+                      <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75);  z-index: 1; opacity: 0.40;"></div>
+                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                          <h5 class="card-title m-0">ULM AUTOGYRE</h5>
+                      </div>
+                  </div>
               </div>
-            </div>
-        
-            <!-- Card 3 -->
-            <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-              <img class="card-img" src="./img/multiaxe.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover;">
-              <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
-              <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                <h5 class="card-title m-0">ULM MULTI-AXES</h5>
+      
+              <!-- Card 3 -->
+              <div class="col-md-4 mb-5">
+                  <div class="card position-relative" style="height: 35rem; border: none;">
+                      <img class="card-img" src="./img/multiaxe.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover;">
+                      <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75);  z-index: 1; opacity: 0.40;"></div>
+                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                          <h5 class="card-title m-0">ULM MULTI-AXES</h5>
+                      </div>
+                  </div>
               </div>
-            </div>
-        
+      
           </div>
-        </article>
+      </article>
     <!-- FIN SECTION NOS VÉHICULES -->
 
 
@@ -196,45 +261,64 @@
 
     <!-- SECTION NOTRE EQUIPE -->
       <section class="container-fluid" id="blue-marin">
-        <article class="row">
-          <div class="col col-md-8 mt-5 ms-5 mb-5">
-              <h2 class="fw-bold text-white display-4" >Notre Équipe</h2>
-              <p class="text-white">Les personnes qui vont vous accueillir à notre aéroclub</p>
-          </div>
-          </article>
-  
-          <article class="row">
-            <div class="d-flex justify-content-around  mb-3">
-          
-              <!-- Card 1 -->
-              <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-                <img class="card-img" src="./img/hotellerie-img.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover;">
-                <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
-                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                  <h5 class="card-title m-0">Service d’Hôtelerie</h5>
+    <article class="row">
+        <div class="col col-md-8 mt-5 ms-5 mb-1">
+            <h2 class="fw-bold text-white display-4">Notre Équipe</h2>
+            <p class="text-white">Les personnes qui vont vous accueillir à notre aéroclub</p>
+        </div>
+    </article>
+
+    <article class="container mt-5">
+        <div class="row d-flex align-items-stretch justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+                <div class="card position-relative text-center" style="border: none; ">
+                    <img class="card-img-top" src="./img/pilote-chef.jpg" alt="Kevin SAITOUT Image" style="height: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Kevin SAITOUT</h5>
+                        <p class="card-text">Chef Pilote</p>
+                    </div>
                 </div>
-              </div>
-          
-              <!-- Card 2 -->
-              <div class="card position-relative" style="width: 18rem; height: 25rem; border: none;">
-                <img class="card-img" src="./img/restauration-img.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover;">
-                <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
-                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                  <h5 class="card-title m-0">Service de Restauration</h5>
-                </div>
-              </div>
-          
-              <!-- Card 3 -->
-              <div class="card position-relative" style="width: 18rem; border: none;">
-                <img class="card-img-top" src="./img/ulm-cours-img.jpg" alt="Cours de vol Image">
-                <div class="position-absolute  w-100 h-100" style="background-color: rgba(8, 4, 132, 0.75); z-index: 1; opacity: 0.40;"></div>
-                <div class="position-absolute  mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                  <h5 class="card-title m-0">Cours de vol</h5>
-                </div>
-              </div>
-          
             </div>
-          </article>
+
+            <!-- Card 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+                <div class="card position-relative text-center" style="border: none;">
+                    <img class="card-img-top" src="./img/instutrice.jpg" alt="Justine VOLAVU Image" style="height: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Justine VOLAVU</h5>
+                        <p class="card-text">Pilote ULM - Instructrice</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+                <div class="card position-relative text-center" style="border: none;">
+                    <img class="card-img-top" src="./img/pierre_roman.jpg" alt="Alain Strument Image" style="height: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Alain Strument</h5>
+                        <p class="card-text">Pilote ULM - Instructeur</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-5">
+                <div class="card position-relative text-center" style="border: none;">
+                    <img class="card-img-top" src="./img/secretaire.jpg" alt="Céline LAPLUME Image" style="height: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Céline LAPLUME</h5>
+                        <p class="card-text">Secrétaire</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</section>
+
     <!-- FIN SECTION NOTRE EQUIPE -->
 
 

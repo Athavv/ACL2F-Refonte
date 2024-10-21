@@ -19,6 +19,32 @@
     background-color: #c0bcdc;
 }
 
-footer{
-    background-color: #080484
-}
+/* Hover effect for the image and text */
+#card-services:hover .card-img {
+    transform: scale(1.3);
+    filter: blur(4px);
+  }
+
+  /* Text appearance on hover */
+  #card-services:hover #card-hover-text {
+      opacity: 1;
+      font-size: 20px;
+  }
+
+  /* Background color fading effect */
+  #card-services:hover .bg-overlay {
+      background-color: rgba(8, 4, 132, 0); /* Background becomes transparent */
+  }
+
+  #card-hover-text {
+    opacity: 0;
+    font-size: 20px;
+  }
+
+  .active, #navbaracti{
+    background-color: #080484;
+    z-index: 500;
+    border-radius: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }

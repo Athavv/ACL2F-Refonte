@@ -76,40 +76,93 @@
   <main>
     <section class="container-fluid" id="blue-marin">
 
-
     <!-- SECTION NOS PRESENTATION AC2LF -->
-    <article class="row" id="presentation-ac2lf">
-      <div class="col col-md-8 mt-3 ms-4 ">
+    <article class="row mt-3" id="presentation-ac2lf">
+      <!-- Colonne de texte -->
+      <div class="col-md-6 mt-3">
           <h2 class="fw-bold text-white display-4">Bienvenue dans ACL2F</h2>
-          <p class="text-white ">L'Aéro-Club de Frotey-les-Lure, appelé communément ACF2L, est né de la fusion entre l'Aéro-Club de l'Ill, situé à Vesoul, et l'Aéro-Club Marin-La-Meslée, basé à Frotey-les-Lure. Aujourd'hui, il fait partie intégrante de l'Association des Aéro-Clubs de la Bourgogne-Franche-Comté.</p>
+          <p class="text-white">L'Aéro-Club de Frotey-les-Lure, appelé communément ACF2L, est né de la fusion entre l'Aéro-Club de l'Ill, situé à Vesoul, et l'Aéro-Club Marin-La-Meslée, basé à Frotey-les-Lure. Aujourd'hui, il fait partie intégrante de l'Association des Aéro-Clubs de la Bourgogne-Franche-Comté.</p>
 
           <p class="text-white">Créée sous le statut d'Association Loi 1901 et agréée Jeunesse et Sports, l'ACF2L est également membre de la Fédération Française d'ULM (FFULM). Son siège social se situe au 62, Avenue de la République, 70200 Lure.</p>
             
-          <p class="text-white">Depuis sa fondation, l'aéroclub s'est engagé à former des pilotes et des instructeurs dans une ambiance conviviale et professionnelle. En plus des formations, l'ACF2L propose également des baptêmes de l'air pour faire découvrir le plaisir de voler à tous.
-            Nos services incluent :</p>
+          <p class="text-white">Depuis sa fondation, l'aéroclub s'est engagé à former des pilotes et des instructeurs dans une ambiance conviviale et professionnelle. En plus des formations, l'ACF2L propose également des baptêmes de l'air pour faire découvrir le plaisir de voler à tous. Nos services incluent :</p>
       </div>
-      </article>
 
-      <article class="row">
-      <div class="col col-md-6 ms-5 ">
-              <ul class="list-group text-white ">
-                <li>Maintenance complète des ULM (moteur, structure, etc.)</li>
-                <li>Montage et installation d'équipements de navigation (compas, radio, transpondeur...)</li>
-                <li>Un service de restauration rapide pour les membres et visiteurs</li>
-                <li>Hébergement pour les élèves stagiaires avec trois studios et six chambres disponibles</li>
-                <li>Location de hangars pour le stationnement des ULM de particuliers</li>
-            </ul>
-              </ul>
+      <!-- Colonne avec cartes -->
+      <div class="col-md-6 mt-3">
+          <div class="row">
+
+              <!-- Card 1 -->
+              <div class="col-md-6 mb-2" id="card-services">
+                <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                    <img class="card-img" src="./img/hectare.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    
+                    <!-- Background color with transition -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                    
+                    <!-- Card title -->
+                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                        <h5 class="card-title m-0">Maintenance complète des ULM (moteur, structure, etc.)</h5>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-6 mb-2" id="card-services">
+                  <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                      <img class="card-img" src="./img/Piste.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                      
+                      <!-- Background color with transition -->
+                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                      
+                      <!-- Card title -->
+                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                          <h5 class="card-title m-0">Montage et installation d'équipements de navigation (compas, radio, transpondeur...)</h5>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-md-6 mb-2" id="card-services">
+                <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                    <img class="card-img" src="./img/hangar.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    
+                    <!-- Background color with transition -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                    
+                    <!-- Card title -->
+                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                        <h5 class="card-title m-0">Hébergement pour les élèves stagiaires avec trois studios et six chambres disponibles</h5>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-md-6 mb-2" id="card-services">
+                  <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                      <img class="card-img" src="./img/locaux.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                      
+                      <!-- Background color avec transition -->
+                      <div class="position-absolute top-0 start-0 w-0 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                      
+                      <!-- Card title -->
+                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                          <h5 class="card-title m-0">Location de hangars pour le stationnement des ULM de particuliers</h5>
+                      </div>
+                  </div>
+              </div>
+
           </div>
-        </div>
-      </article>
+      </div>
+    </article>
 
+    
       <article class="container mt-5">
         <div class="row d-flex align-items-stretch">
     
             <!-- Card 1 -->
             <div class="col-md-4 mb-5" id="card-services">
-              <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+              <div class="card position-relative overflow-hidden" style="height: 28rem; border: none;">
                   <img class="card-img" src="./img/hotellerie-img.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                   
                   <!-- Background color with transition -->
@@ -117,7 +170,7 @@
                   
                   <!-- Card title -->
                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                      <h5 class="card-title m-0">Service d’Hôtellerie</h5>
+                      <h5 class="card-title m-0">Service d'Hôtellerie</h5>
                   </div>
           
                   <!-- Hidden text that appears on hover -->
@@ -130,7 +183,7 @@
     
             <!-- Card 2 -->
             <div class="col-md-4 mb-5" id="card-services">
-                <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                <div class="card position-relative overflow-hidden" style="height: 28rem; border: none;">
                     <img class="card-img" src="./img/restauration-img.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                     
                     <!-- Background color with transition -->
@@ -151,7 +204,7 @@
     
             <!-- Card 3 -->
             <div class="col-md-4 mb-5" id="card-services">
-                <div class="card position-relative overflow-hidden" style="height: 35rem; border: none;">
+                <div class="card position-relative overflow-hidden" style="height: 28rem; border: none;">
                     <img class="card-img" src="./img/ulm-cours-img.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                     
                     <!-- Background color with transition -->
@@ -183,7 +236,7 @@
 
     <!-- SECTION NOS VÉHICULES -->
 
-      <section class="container-fluid" id="blue-light">
+      <section class="container-fluid pb-5" id="blue-light">
       <article class="row">
         <div class="col col-md-8 mt-5 ms-5" style="color: #080484; ">
             <h2 class="fw-bold display-4">Nos Véhicules</h2>
@@ -235,175 +288,218 @@
 
   
     <!-- SECTION NOS MOYENS PEDAGOGIQUES -->
-        <article class="row ">
-        <div class="col col-md-6 ms-5 " style="color: #080484;">
+        <article class="row">
+        <div class="col col-md-8 ms-5 " style="color: #080484;">
           <h2 class="fw-bold display-4" >Nos Moyens Pédagogiques</h2>
           <p >Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</p>
             </div>
           </div>
         </article>
 
-        <article class="container mt-5">
-          <div class="row d-flex align-items-stretch">
-      
-              <!-- Card 1 -->
-              <div class="col-md-4 mb-2" id="card-services">
-                <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                    <img class="card-img" src="./img/hectare.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                    
-                    <!-- Background color with transition -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                    
-                    <!-- Card title -->
-                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                        <h5 class="card-title m-0">Une surface totale de 45 hectares dégagés</h5>
-                    </div>
-            
-                    <!-- Hidden text that appears on hover -->
-                </div>
-            </div>
-      
-              <!-- Card 2 -->
-              <div class="col-md-4 mb-2" id="card-services">
-                  <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                      <img class="card-img" src="./img/Piste.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                      
-                      <!-- Background color with transition -->
-                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                      
-                      <!-- Card title -->
-                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                          <h5 class="card-title m-0">Deux pistes en X de 800 et 450 m</h5>
-                      </div>
-                  </div>
-              </div>
-      
-              <!-- Card 3 -->
-              <div class="col-md-4 mb-2" id="card-services">
-                  <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                      <img class="card-img" src="./img/hydrosurface.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                      
-                      <!-- Background color with transition -->
-                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                      
-                      <!-- Card title -->
-                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                          <h5 class="card-title m-0">Un hydrosurface de 8 hectares.</h5>
-                      </div>
-            
-                      <!-- Hidden text that appears on hover -->
-
-              </div>
-          </div>
-      </article>
-
-      <article class="container mt-5">
-          <div class="row d-flex align-items-stretch">
-      
-              <!-- Card 4 -->
-              <div class="col-md-4 mb-2" id="card-services">
-                <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                    <img class="card-img" src="./img/hangar.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                    
-                    <!-- Background color with transition -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                    
-                    <!-- Card title -->
-                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                        <h5 class="card-title m-0">Trois hangars avec surface couverte de 4300 m².</h5>
-                    </div>
-            
-                    <!-- Hidden text that appears on hover -->
-                </div>
-            </div>
-      
-              <!-- Card 5 -->
-              <div class="col-md-4 mb-2" id="card-services">
-                  <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                      <img class="card-img" src="./img/locaux.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                      
-                      <!-- Background color with transition -->
-                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                      
-                      <!-- Card title -->
-                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                          <h5 class="card-title m-0">Locaux administratifs informatisés.</h5>
-                      </div>
-                  </div>
-              </div>
-      
-              <!-- Card 6 -->
-              <div class="col-md-4 mb-2" id="card-services">
-                  <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                      <img class="card-img" src="./img/simulateur.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                      
-                      <!-- Background color with transition -->
-                      <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                      
-                      <!-- Card title -->
-                      <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                          <h5 class="card-title m-0">Salle de cours multimédia avec simulateur de vol.</h5>
-                      </div>
-            
-                      <!-- Hidden text that appears on hover -->
-
-              </div>
-          </div>
-      </article>
-      
-      <article class="container mt-5">
-        <div class="row d-flex align-items-stretch">
-    
+        <article class="container-fluid mt-2" id="slider">
+          <div class="row flex-nowrap" id="cards-slide">
+        
             <!-- Card 1 -->
-            <div class="col-md-4 mb-5" id="card-services">
+            <div class="col-md-4 mb-2" id="card-services">
               <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                  <img class="card-img" src="./img/atelier.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                  
-                  <!-- Background color with transition -->
-                  <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                  
-                  <!-- Card title -->
-                  <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                      <h5 class="card-title m-0">Un atelier d'entretien et de réparation.</h5>
-                  </div>
-          
-                  <!-- Hidden text that appears on hover -->
-              </div>
-          </div>
-    
-            <!-- Card 2 -->
-            <div class="col-md-4 mb-5" id="card-services">
-                <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                    <img class="card-img" src="./img/restauration.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                    
-                    <!-- Background color with transition -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                    
-                    <!-- Card title -->
-                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                        <h5 class="card-title m-0">Des capacités d'accueil et de restauration sur place.</h5>
-                    </div>
+                <img class="card-img" src="./img/hectare.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Une surface totale de 45 hectares dégagés</h5>
                 </div>
+              </div>
             </div>
-    
+        
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-2" id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/Piste.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Deux pistes en X de 800 et 450 m</h5>
+                </div>
+              </div>
+            </div>
+        
             <!-- Card 3 -->
-            <div class="col-md-4 mb-5" id="card-services">
-                <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
-                    <img class="card-img" src="./img/wifi.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
-                    
-                    <!-- Background color with transition -->
-                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
-                    
-                    <!-- Card title -->
-                    <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
-                        <h5 class="card-title m-0">Connexion WIFI gratuit sur toute la base.</h5>
-                    </div>
-          
-                    <!-- Hidden text that appears on hover -->
-
+            <div class="col-md-4 mb-2" id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/hydrosurface.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Un hydrosurface de 8 hectares.</h5>
+                </div>
+              </div>
             </div>
-        </div>
-    </article>
+        
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-2" id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/hangar.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Trois hangars avec surface couverte de 4300 m².</h5>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-2" id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/locaux.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Locaux administratifs informatisés.</h5>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-2" id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/simulateur.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Salle de cours multimédia avec simulateur de vol.</h5>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Card 7 -->
+            <div class="col-md-4 " id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/atelier.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Un atelier d'entretien et de réparation.</h5>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Card 8 -->
+            <div class="col-md-4 " id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/restauration.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Des capacités d'accueil et de restauration sur place.</h5>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Card 9 -->
+            <div class="col-md-4 " id="card-services">
+              <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                <img class="card-img" src="./img/wifi.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                  <h5 class="card-title m-0">Connexion WIFI gratuit sur toute la base.</h5>
+                </div>
+              </div>
+            </div>
+
+
+               <!-- Card 10 -->
+               <div class="col-md-4 mb-2" id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/hectare.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Une surface totale de 45 hectares dégagés</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 11 -->
+               <div class="col-md-4 mb-2" id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/Piste.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Deux pistes en X de 800 et 450 m</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 12 -->
+               <div class="col-md-4 mb-2" id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/hydrosurface.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Un hydrosurface de 8 hectares.</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 13 -->
+               <div class="col-md-4 mb-2" id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/hangar.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Trois hangars avec surface couverte de 4300 m².</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 14 -->
+               <div class="col-md-4 mb-2" id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/locaux.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Locaux administratifs informatisés.</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 15 -->
+               <div class="col-md-4 mb-2" id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/simulateur.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Salle de cours multimédia avec simulateur de vol.</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 16 -->
+               <div class="col-md-4 " id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/atelier.jpg" alt="Service d'Hôtellerie Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Un atelier d'entretien et de réparation.</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 17 -->
+               <div class="col-md-4 " id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/restauration.jpg" alt="Service de Restauration Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Des capacités d'accueil et de restauration sur place.</h5>
+                   </div>
+                 </div>
+               </div>
+              
+               <!-- Card 18 -->
+               <div class="col-md-4 " id="card-services">
+                 <div class="card position-relative overflow-hidden" style="height: 13rem; border: none;">
+                   <img class="card-img" src="./img/wifi.jpg" alt="Cours de vol Image" style="height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                   <div class="position-absolute top-0 start-0 w-100 h-100 bg-overlay" style="background-color: rgba(0, 0, 0, 0.75); transition: background-color 0.5s ease;"></div>
+                   <div class="position-absolute top-0 start-0 mt-4 ms-3 text-white p-2" style="z-index: 2;">
+                     <h5 class="card-title m-0">Connexion WIFI gratuit sur toute la base.</h5>
+                   </div>
+                 </div>
+               </div>
+
+          </div>
+        </article>
 
 
       </section>

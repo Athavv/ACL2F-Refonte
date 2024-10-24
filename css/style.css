@@ -49,45 +49,41 @@ body {
 
 
 
-  #slider{
-    overflow: hidden;
+  #slider {
+    overflow:hidden;
   }
-
-  #cards-slide{
+  
+  #cards-slide {
     display: flex;
     align-items: center;
-    justify-content: center;
-    animation: slide 30s linear infinite;
-
+    animation: slide 60s linear infinite;
+    white-space: nowrap; /* Ajouté pour empêcher le retour à la ligne */
   }
-
-
+  
+  
   @keyframes slide {
-    from{
+    from {
       transform: translateX(0%);
     }
-
-    to{
+    to {
       transform: translateX(-300%);
     }
-    
   }
-
-
-  #cards-slide:hover{
+  
+  #cards-slide:hover {
     animation-play-state: paused;
   }
-
+  
   @font-face {
     font-family: San-Francisco;
     src: url(../fonts/San-Francisco/otf/SFNSDisplay-Black.otf);
   }
-
-  h1, h2, ul, footer{
-    font-family: San-francisco;
+  
+  h1, h2, ul, footer {
+    font-family: San-Francisco; 
   }
-
-  p{
+  
+  p {
     font-family: sans-serif;
     font-size: 18px;
   }

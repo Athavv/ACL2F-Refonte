@@ -279,10 +279,17 @@ i{
   background-color: #5e5acc;
   color: white;
   transform: rotateY(180deg); /* Positionner l'arrière */
-  font-family: San-Francisco-normal;
 }
 
-#img-galerie  img{
+#img-galerie img{
   width: 200px;
   height: 200px;
+}
+
+#img-galerie p{
+  font-family: San-Francisco;
+}
+
+#btn-outline-light{
+  color: #080484;
 }
